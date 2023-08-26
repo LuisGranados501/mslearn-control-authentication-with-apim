@@ -5,8 +5,8 @@ apiappname=WeatherDataAPI$(openssl rand -hex 5)
 printf "Setting username and password for Git ... (1/7)\n\n"
 
 
-GIT_USERNAME=LuisGranados501$Random
-GIT_EMAIL=luisgranados501@gmail.com
+GIT_USERNAME=gitName$Random
+GIT_EMAIL=a@b.c
 
 git config --global user.name "$GIT_USERNAME"
 git config --global user.email "$GIT_EMAIL"
@@ -21,7 +21,7 @@ PLAN_NAME=myPlan
 printf "\nCreating App Service plan in FREE tier ... (2/7)\n\n"
 
 
-az appservice plan create --name $apiappname --resource-group $RESOURCE_GROUP --location eastus --sku FREE --verbose
+az appservice plan create --name $apiappname --resource-group $RESOURCE_GROUP --location centralus --sku FREE --verbose
 
 printf "\nCreating API App ... (3/7)\n\n"
 
